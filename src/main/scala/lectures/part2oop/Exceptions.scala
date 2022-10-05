@@ -25,7 +25,7 @@ object Exceptions extends App {
     getInt(true)
   } catch {
         // try to match against all exception that we might have
-    case e: RuntimeException => println("Caught a Runtime exception") // If we don't catch this, the program will fail
+    case e: RuntimeException => println("Caught a Runtime exception") // If we don't catch this, the program will crash
     case f: NullPointerException => println("Caught a NullPointerException exception")
   } finally {
     // code that will get executed NO MATTER WHAT
@@ -42,5 +42,5 @@ object Exceptions extends App {
   // 3. How to define our own exceptions
   class MyException extends Exception
   val exception = new MyException
-//  throw exception // this will fail this program
+//  throw exception // this will crash the program
 }
