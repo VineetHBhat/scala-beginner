@@ -50,7 +50,7 @@ object PackagingAndImports extends App {
   val sqlDate = new java.sql.Date(2018, 5, 4)
 
   // Option 2. Use aliasing
-  val sqlDate = new SqlDate(2018, 5, 4)
+//  val sqlDate = new SqlDate(2018, 5, 4) // deprecated constructor for SqlDate
 
   // DEFAULT IMPORTS
   // Packages that are automatically imported without any intentional import from our side
